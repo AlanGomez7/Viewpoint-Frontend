@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #121212;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
