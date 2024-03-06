@@ -1,9 +1,4 @@
-import {
-  Box,
-  List,
-  ListItem,
-  ListItemButton,
-} from "@mui/material";
+import { Box, List, ListItem, ListItemButton } from "@mui/material";
 import {
   AddCircleOutline,
   Face,
@@ -18,7 +13,7 @@ import Logo from "../atoms/Logo";
 function NavbarNew() {
   return (
     <>
-      <Box sx={{minWidth: 250,display: {lg: "block", xs: "none"}}}>
+      <Box sx={{ width: "auto", display: { md: "block",lg: "block", xs: "none" } }}>
         <Logo isTop={false} />
         <List>
           <ListItem>
@@ -26,7 +21,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <HomeRounded />
               </ListItemDecorator>
-              <ListItemContent>Home</ListItemContent>
+              <ListItemContent sx={{display:{md: "none", lg: "block"}}}>Home</ListItemContent>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -34,7 +29,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <SearchRounded />
               </ListItemDecorator>
-              <ListItemContent>Search</ListItemContent>
+              <ListItemContent  sx={{display:{md: "none", lg: "block"}}}>Search</ListItemContent>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -42,7 +37,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <VideoCall />
               </ListItemDecorator>
-              <ListItemContent>Reels</ListItemContent>
+              <ListItemContent sx={{display:{md: "none", lg: "block"}}}>Reels</ListItemContent>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -50,7 +45,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <VideoCall />
               </ListItemDecorator>
-              <ListItemContent>Explore</ListItemContent>
+              <ListItemContent sx={{display:{md: "none", lg: "block"}}}>Explore</ListItemContent>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -58,7 +53,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <AddCircleOutline />
               </ListItemDecorator>
-              <ListItemContent>Create</ListItemContent>
+              <ListItemContent  sx={{display:{md: "none", lg: "block"}}}>Create</ListItemContent>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -66,7 +61,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <MessageRounded />
               </ListItemDecorator>
-              <ListItemContent>Message</ListItemContent>
+              <ListItemContent  sx={{display:{md: "none", lg: "block"}}}>Message</ListItemContent>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -74,7 +69,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <NotificationImportant />
               </ListItemDecorator>
-              <ListItemContent>Notification</ListItemContent>
+              <ListItemContent  sx={{display:{md: "none", lg: "block"}}}>Notification</ListItemContent>
             </ListItemButton>
           </ListItem>
           <ListItem>
@@ -82,7 +77,7 @@ function NavbarNew() {
               <ListItemDecorator>
                 <Face />
               </ListItemDecorator>
-              <ListItemContent>Profile</ListItemContent>
+              <ListItemContent  sx={{display:{md: "none", lg: "block"}}}>Profile</ListItemContent>
             </ListItemButton>
           </ListItem>
         </List>

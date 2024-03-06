@@ -1,44 +1,38 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
 import NavbarNew from "../components/navbar/NavbarNew";
 import { Box } from "@mui/material";
 import MobileHeaderNav from "../components/navbar/MobileHeaderNav";
 import MobileFooterNav from "../components/navbar/MobileFooterNav";
+import UserTiles from "../components/Cards/UserTiles";
 
 type props = {
   children: React.ReactNode;
 };
 
 export default function MainLayout({ children }: props) {
-  // return (
-  //   <div className="flex h-dvh w-dvw flex-col lg:flex-row">
-  //     <div className="hidden lg:block">
-  //       <NavbarNew />
-  //     </div>
-  //     <div className="lg:hidden">
-  //       <MobileTopNav />
-  //     </div>
-  //     {children}
-  //     <div className="lg:hidden">
-  //       <MobileNavBar />
-  //     </div>
-  //   </div>
-  // );
-
   return (
-    <Box sx={{ display: { lg: "flex", sm: "block" } }}>
+    <Box className="lg: flex h-dvh">
       <NavbarNew />
-      <MobileHeaderNav />
+      <Box
+        position={"fixed"}
+        top={0}
+        minWidth={"100dvw"}
+        zIndex={1}
+        sx={{ display: { sm: "block", md: "none", lg: "none" } }}
+      >
+        <MobileHeaderNav />
+      </Box>
+      
       {children}
-      <MobileFooterNav />
+      <Box
+        position={"fixed"}
+        bottom={0}
+        minWidth={"100dvw"}
+        // zIndex={1}
+        sx={{ display: { sm: "block", md: "none", lg: "none" } }}
+      >
+        <MobileFooterNav />
+      </Box>
     </Box>
   );
-}
-
-{
-  /* <Box sx={{ display: { lg: "none", sm: "block" } }}>
-</Box>
-<Box>{children}</Box>
-<Box sx={{ display: { lg: "none", sm: "block" } }}>
-</Box> */
 }
