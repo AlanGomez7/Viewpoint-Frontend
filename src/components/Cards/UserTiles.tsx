@@ -8,7 +8,8 @@ export default function UserTiles() {
     <Box
       sx={{ display: "flex", alignItems: "center"}}
       gap={4}
-      paddingTop={4}   
+      paddingTop={5}
+      width={"auto"}
     >
       <CardMedia
         className="rounded-full bg-cover"

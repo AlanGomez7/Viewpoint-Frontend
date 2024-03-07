@@ -19,11 +19,12 @@ export default function FeedsCard() {
     <Box>
       <Card
         sx={{
-          maxWidth: 450,
+          maxWidth: 400,
           boxShadow: "5px",
           backgroundColor: "#121212",
           color: "white",
           borderBottom: "1px solid",
+          margin:"auto"
         }}
       >
         <CardHeader
