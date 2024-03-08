@@ -3,12 +3,16 @@ import CardMedia from "@mui/material/CardMedia";
 import { squareImage } from "../../constants/constants";
 import { Button, Typography } from "@mui/material";
 
-export default function UserTiles() {
+type suggestionPropType = {
+  isSuggestion: boolean;
+};
+
+export default function UserTiles({ isSuggestion }: suggestionPropType) {
   return (
     <Box
-      sx={{ display: "flex", alignItems: "center"}}
+      sx={{ display: "flex", alignItems: "center" }}
       gap={4}
-      paddingTop={5}
+      paddingTop={3}
       width={"auto"}
     >
       <CardMedia
@@ -19,7 +23,11 @@ export default function UserTiles() {
       />
       <Box>
         <Typography paddingTop={1}>Alan gomez</Typography>
-        <Button sx={{ textTransform: "none" }}>Switch</Button>
+        {isSuggestion ? (
+          <Button sx={{ textTransform: "none" }}>Switch</Button>
+        ) : (
+          <Button sx={{ textTransform: "none" }}>follow</Button>
+        )}
       </Box>
     </Box>
   );
