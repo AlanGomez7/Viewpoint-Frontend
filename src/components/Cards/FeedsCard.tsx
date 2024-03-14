@@ -1,3 +1,4 @@
+import {useRef} from "react"
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -11,10 +12,12 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { dummyImage } from "../../constants/constants";
+import dummyVideo from "../../assets/production_id_4434150 (1080p).mp4"
 import { CommentRounded } from "@mui/icons-material";
 import { Box } from "@mui/material";
 
 export default function FeedsCard() {
+  const videoRef = useRef(null)
   return (
     <Box>
       <Card
@@ -42,10 +45,13 @@ export default function FeedsCard() {
           subheader="September 14, 2016"
         />
         <CardMedia
-          component="img"
-          height="194"
-          image={dummyImage}
-          alt="Paella dish"
+          ref={videoRef}
+          component="video"
+          sx={{maxHeight:"100"}}
+          image={dummyVideo}
+          autoPlay
+          muted
+          loop
         />
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">

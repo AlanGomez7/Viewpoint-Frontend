@@ -2,24 +2,26 @@ import { Box, List, ListItem, ListItemButton } from "@mui/material";
 import {
   AddCircleOutline,
   Face,
-  HomeRounded,
-  MessageRounded,
+  HomeOutlined,
+  MessageOutlined,
   NotificationImportant,
   SearchRounded,
   VideoCall,
 } from "@mui/icons-material";
 import { ListItemContent, ListItemDecorator } from "@mui/joy";
 import Logo from "../atoms/Logo";
+import SearchDrawer from "../SearchDrawer";
+import MoreNavlink from "../atoms/MoreNavlink";
 function NavbarNew() {
   return (
     <>
       <Box className="hidden lg:block md:block border-r-2 ">
-        {/* <Logo isTop={false} /> */}
+        <Logo isTop={false} />
         <List>
           <ListItem>
             <ListItemButton sx={{ gap: 2 }} href="/">
               <ListItemDecorator>
-                <HomeRounded />
+                <HomeOutlined />
               </ListItemDecorator>
               <ListItemContent className="hidden lg:block">
                 Home
@@ -27,18 +29,18 @@ function NavbarNew() {
             </ListItemButton>
           </ListItem>
 
-          <ListItem>
-            <ListItemButton sx={{ gap: 2 }}  href="/search">
+          <SearchDrawer />
+          {/* <ListItem>
+            <ListItemButton sx={{ gap: 1 }}>
               <ListItemDecorator>
                 <SearchRounded />
               </ListItemDecorator>
               <ListItemContent className="hidden lg:block">
-                Search
               </ListItemContent>
             </ListItemButton>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
-            <ListItemButton sx={{ gap: 2 }}  href="/reels">
+            <ListItemButton sx={{ gap: 2 }} href="/reels">
               <ListItemDecorator>
                 <VideoCall />
               </ListItemDecorator>
@@ -48,7 +50,7 @@ function NavbarNew() {
             </ListItemButton>
           </ListItem>
           <ListItem>
-            <ListItemButton sx={{ gap: 2 }}  href="/explore">
+            <ListItemButton sx={{ gap: 2 }} href="/explore">
               <ListItemDecorator>
                 <VideoCall />
               </ListItemDecorator>
@@ -58,7 +60,7 @@ function NavbarNew() {
             </ListItemButton>
           </ListItem>
           <ListItem>
-            <ListItemButton sx={{ gap: 2 }}  href="/create">
+            <ListItemButton sx={{ gap: 2 }} href="/create">
               <ListItemDecorator>
                 <AddCircleOutline />
               </ListItemDecorator>
@@ -68,9 +70,9 @@ function NavbarNew() {
             </ListItemButton>
           </ListItem>
           <ListItem>
-            <ListItemButton sx={{ gap: 2 }}  href="/message">
+            <ListItemButton sx={{ gap: 2 }} href="/message">
               <ListItemDecorator>
-                <MessageRounded />
+                <MessageOutlined />
               </ListItemDecorator>
               <ListItemContent className="hidden lg:block">
                 Message
@@ -78,7 +80,7 @@ function NavbarNew() {
             </ListItemButton>
           </ListItem>
           <ListItem>
-            <ListItemButton sx={{ gap: 2 }}  href="/notification">
+            <ListItemButton sx={{ gap: 2 }} href="/notification">
               <ListItemDecorator>
                 <NotificationImportant />
               </ListItemDecorator>
@@ -88,7 +90,7 @@ function NavbarNew() {
             </ListItemButton>
           </ListItem>
           <ListItem>
-            <ListItemButton sx={{ gap: 2 }}  href="/profile">
+            <ListItemButton sx={{ gap: 2 }} href="/profile">
               <ListItemDecorator>
                 <Face />
               </ListItemDecorator>
@@ -98,6 +100,7 @@ function NavbarNew() {
             </ListItemButton>
           </ListItem>
         </List>
+        
       </Box>
     </>
   );

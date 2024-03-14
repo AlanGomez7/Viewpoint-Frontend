@@ -5,7 +5,6 @@ import MenuItem from "@mui/material/MenuItem";
 import { MenuRounded } from "@mui/icons-material";
 
 export default function MoreNavlink() {
-
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -24,7 +23,7 @@ export default function MoreNavlink() {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
         sx={{ color: "white", textTransform: "none" }}
-        startIcon={<MenuRounded/>}
+        startIcon={<MenuRounded />}
       >
         More
       </Button>

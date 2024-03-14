@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import Contents from "../components/Contents"
+import Contents from "../components/Contents";
+import AuthLayout from "../layouts/AuthLayout";
+import Signin from "../components/Signin";
 
 export default function AppRoutes() {
   return (
@@ -9,11 +11,18 @@ export default function AppRoutes() {
         path="/"
         element={
           <MainLayout>
-            <Contents/>
+            <Contents />
           </MainLayout>
+        }
+      />
+      <Route
+        path="/signin"
+        element={
+          <AuthLayout>
+            <Signin />
+          </AuthLayout>
         }
       />
     </Routes>
   );
 }
-

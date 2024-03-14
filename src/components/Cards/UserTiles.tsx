@@ -3,11 +3,11 @@ import CardMedia from "@mui/material/CardMedia";
 import { squareImage } from "../../constants/constants";
 import { Button, Typography } from "@mui/material";
 
-type suggestionPropType = {
+type userTilesProp = {
   isSuggestion: boolean;
 };
 
-export default function UserTiles({ isSuggestion }: suggestionPropType) {
+export default function UserTiles({ isSuggestion }: userTilesProp) {
   return (
     <Box
       sx={{ display: "flex", alignItems: "center" }}
