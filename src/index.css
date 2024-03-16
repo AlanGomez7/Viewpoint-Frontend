@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Rampart+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Miltonian&family=Rampart+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

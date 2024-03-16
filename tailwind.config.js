@@ -6,8 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'signinBackground': "url('./src/assets/bgSignin')"
+      },
       fontFamily: {
-        logoFont: ["Six caps", "sans-serif"]
+        logoFont: ["Miltonian", "serif"]
       },
       colors: {
         bgHover: "#aaaaaa",

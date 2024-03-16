@@ -51,7 +51,7 @@ export default function FeedsCard() {
           image={dummyVideo}
           autoPlay
           muted
-          loop
+          // loop
         />
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
