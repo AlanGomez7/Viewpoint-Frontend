@@ -5,8 +5,8 @@ import StoryCarousel from "./StoryCarousel";
 export default function Contents() {
   return (
     <>
-      <StoryCarousel />
-      <Box className="flex flex-col lg:my-7">
+      <Box className="scroll-smooth overflow-x-auto max-h-dvh">
+        <StoryCarousel/>
         <FeedsCard />
         <FeedsCard />
         <FeedsCard />

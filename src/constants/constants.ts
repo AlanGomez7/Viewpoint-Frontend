@@ -1,6 +1,6 @@
 export const dummyImage = "https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fHww"
 export const squareImage = 'https://www.wonderplugin.com/wp-content/uploads/2014/08/sakura-trees.jpg'
-
+export const imgLink = "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tfGVufDB8fDB8fHww"
 // <Box
 //         position={"fixed"}
 //         top={0}

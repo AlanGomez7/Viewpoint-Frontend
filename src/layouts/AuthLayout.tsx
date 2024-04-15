@@ -8,12 +8,10 @@ type AuthLayoutProp = {
 function AuthLayout({ children }: AuthLayoutProp) {
   return (
     <Box
-    className="bg-contain bg-no-repeat bg-center"
+    className=""
       height={"100dvh"}
       display={"flex"}
-      justifyContent={"center"}
-      sx={{ placeItems: "center", backgroundImage: `url(${bgImage})`}}
-      
+      sx={{ placeItems: "center", justifyContent: "center"}}
     >
       {children}
     </Box>

@@ -12,7 +12,7 @@ function StoryCarousel() {
     }
   };
   return (
-    <Box className="mt-20 lg:mt-0 lg:mx-16 flex items-center">
+    <Box className="flex">
       <div onClick={() => scrollHandlerFunction(true)}>
         <ArrowLeft />
       </div>

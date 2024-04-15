@@ -1,4 +1,4 @@
-import {useRef} from "react"
+import { useRef } from "react";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
@@ -11,23 +11,22 @@ import { red } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { dummyImage } from "../../constants/constants";
-import dummyVideo from "../../assets/production_id_4434150 (1080p).mp4"
+import dummyVideo from "../../assets/production_id_4434150 (1080p).mp4";
+import { imgLink } from "../../constants/constants";
 import { CommentRounded } from "@mui/icons-material";
 import { Box } from "@mui/material";
 
 export default function FeedsCard() {
-  const videoRef = useRef(null)
+  const videoRef = useRef(null);
+
   return (
     <Box>
       <Card
         sx={{
-          maxWidth: 400,
-          boxShadow: "5px",
-          backgroundColor: "#121212",
-          color: "white",
-          borderBottom: "1px solid",
-          margin:"auto"
+          width: "60%",
+          marginTop: "30Px",
+          boxShadow: "none",
+          marginX: "auto",
         }}
       >
         <CardHeader
@@ -45,14 +44,13 @@ export default function FeedsCard() {
           subheader="September 14, 2016"
         />
         <CardMedia
-          ref={videoRef}
-          component="video"
-          sx={{maxHeight:"100"}}
-          image={dummyVideo}
-          autoPlay
-          muted
-          // loop
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          src={imgLink}
+          title="Contemplative Reptile"
         />
+
         <CardActions disableSpacing>
           <IconButton aria-label="add to favorites">
             <FavoriteIcon color="error" />
@@ -65,7 +63,7 @@ export default function FeedsCard() {
           </IconButton>
         </CardActions>
         <CardContent>
-          <Typography variant="body2" color="white">
+          <Typography variant="body2">
             This impressive paella is a perfect party
           </Typography>
           <Typography variant="caption" color="grey">

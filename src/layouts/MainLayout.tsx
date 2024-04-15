@@ -26,7 +26,6 @@ export default function MainLayout({ children }: props) {
       <NavbarNew />
       <Box className="h-dvh overflow-y-auto grow basis-2/4">{children}</Box>
       <Suggestions/>
-
       <Box
         className="lg:hidden md:hidden"
         position={"fixed"}

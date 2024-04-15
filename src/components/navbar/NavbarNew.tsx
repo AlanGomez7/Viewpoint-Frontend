@@ -15,7 +15,7 @@ import MoreNavlink from "../atoms/MoreNavlink";
 function NavbarNew() {
   return (
     <>
-      <Box className="hidden lg:block md:block border-r-2 ">
+      <Box className="hidden lg:block md:block">
         <Logo isTop={false} />
         <List>
           <ListItem>
